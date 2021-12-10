@@ -54,3 +54,25 @@ header {
   padding: 0 0 0 1rem;
   margin-bottom: 1rem;
 }
+
+nav {
+  z-index: 50;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+ul {
+  display: flex;
+  padding-top: 0;
+  margin: 0;
+  padding-right: 3rem;
+  justify-content: flex-end;
+}
+
+ul li {
+  font-family: "Patua One", sans-serif;
+  display: inline;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+}
