@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: Georgia, serif;
+  line-height: 1.5;
 }
 
 *,
@@ -12,7 +14,25 @@ img {
   width: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "header header"
+    "figure figure";
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr;
+}
+
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
+  /*
+  Remove the <header> box and allow us to directly apply header’s children to the grid.
+  */
+
+  grid-area: header;
   display: contents;
+  padding: 0;
+  margin: 1rem;
 }
